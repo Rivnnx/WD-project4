@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення оплати - WorkHub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">W</span>
+          WorkHub
+        </a>
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html" class="active">Пошук</a>
+          <a href="dashboard.html">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container page page-narrow">
+        <a href="space.html" class="back-link">← Змінити час</a>
+        <h1>Оформлення оплати</h1>
+
+        <div class="checkout mt-24">
+          <form class="card card-padding" action="success.html">
+            <fieldset>
+              <legend class="section-title">Спосіб оплати</legend>
+              <div class="mt-16">
+                <label class="payment-method"><input type="radio" name="method" value="card" checked> Банківська картка</label>
+              </div>
+              <div class="mt-8">
+                <label class="payment-method"><input type="radio" name="method" value="apple"> Apple Pay</label>
+              </div>
+              <div class="mt-8">
+                <label class="payment-method"><input type="radio" name="method" value="google"> Google Pay</label>
+              </div>
+            </fieldset>
+
+            <div class="card-fields">
+              <div class="wide">
+                <label class="label" for="card-num">Номер картки</label>
+                <input class="input" id="card-num" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19">
+              </div>
+              <div>
+                <label class="label" for="card-exp">Термін дії</label>
+                <input class="input" id="card-exp" type="text" placeholder="ММ/РР" maxlength="5">
+              </div>
+              <div>
+                <label class="label" for="card-cvc">CVC</label>
+                <input class="input" id="card-cvc" type="text" inputmode="numeric" placeholder="123" maxlength="3">
+              </div>
+              <div class="wide">
+                <label class="label" for="card-name">Ім’я власника</label>
+                <input class="input" id="card-name" type="text" placeholder="Як на картці">
+              </div>
+            </div>
+
+            <button class="btn btn-accent btn-full mt-24" type="submit">Сплатити 473 ₴</button>
+            <p class="text-xs text-muted mt-16">Безпечна оплата. Дані картки не зберігаються.</p>
+          </form>
+
+          <aside class="card checkout-summary">
+            <img class="summary-photo" src="images/meetTv.jpg" alt="">
+            <div class="card-padding">
+              <h2 class="section-title">Підсумок замовлення</h2>
+              <p class="text-small mt-8"><strong>Переговорна «Дніпро»</strong></p>
+              <p class="text-small text-muted">20.10.2026, 13:00–14:00</p>
+              <dl class="summary text-small">
+                <div>
+                  <dt>450 ₴ × 1 год</dt>
+                  <dd>450 ₴</dd>
+                </div>
+                <div>
+                  <dt>Сервісний збір</dt>
+                  <dd>23 ₴</dd>
+                </div>
+                <div class="total">
+                  <dt>Разом</dt>
+                  <dd>473 ₴</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 WorkHub</p>
+      <p>Коворкінги для роботи й зустрічей</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

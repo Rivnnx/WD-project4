@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук коворкінгів — WorkHub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">W</span>
+          WorkHub
+        </a>
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html" class="active">Пошук</a>
+          <a href="dashboard.html">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Знайдіть місце для роботи за хвилину</h1>
+          <p class="hero-text">
+            Робочі місця та переговорні в коворкінгах Києва, Львова й Одеси.
+            Оплата онлайн, вхід за QR-кодом.
+          </p>
+
+          <form class="search-form" action="index.html" aria-label="Пошук коворкінгів">
+            <div>
+              <label class="label" for="q-city">Місто</label>
+              <select class="input" id="q-city" name="city">
+                <option value="">Усі міста</option>
+                <option>Київ</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+              </select>
+            </div>
+            <div>
+              <label class="label" for="q-date">Дата</label>
+              <input class="input" id="q-date" name="date" type="date" value="2026-10-20">
+            </div>
+            <div>
+              <label class="label" for="q-time">Час початку</label>
+              <select class="input" id="q-time" name="time">
+                <option>09:00</option>
+                <option selected>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+              </select>
+            </div>
+            <div>
+              <label class="label" for="q-guests">Кількість осіб</label>
+              <input class="input" id="q-guests" name="guests" type="number" value="2" min="1" max="20">
+            </div>
+            <button class="btn btn-accent" type="submit">Знайти</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="container results">
+        <div class="results-head">
+          <div>
+            <h2>Усі простори</h2>
+            <p class="text-small text-muted">Знайдено: 6</p>
+          </div>
+
+          <div class="filters">
+            <label class="switch">
+              <input type="checkbox" class="sr-only">
+              <span class="switch-track"></span>
+              Доступно зараз
+            </label>
+
+            <div class="segmented">
+              <label><input type="radio" name="type" class="sr-only" checked><span>Усі</span></label>
+              <label><input type="radio" name="type" class="sr-only"><span>Робоче місце</span></label>
+              <label><input type="radio" name="type" class="sr-only"><span>Переговорна</span></label>
+            </div>
+          </div>
+        </div>
+
+        <ul class="cards-grid">
+          <li>
+            <article class="card">
+              <img class="card-photo" src="images/meetTv.jpg" alt="Переговорна «Дніпро»: переговорна у місті Київ">
+              <div class="card-body">
+                <div class="row row-between">
+                  <span class="badge badge-blue">Переговорна</span>
+                  <span class="badge badge-green">Доступно зараз</span>
+                </div>
+                <h3 class="card-title">Переговорна «Дніпро»</h3>
+                <p class="text-small text-muted">Київ, вул. Хрещатик, 22</p>
+                <div class="card-rating">
+                  <span class="stars" role="img" aria-label="Рейтинг 4.8 з 5, 126 відгуків"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span></span>
+                  <strong>4.8</strong>
+                  <span class="text-muted">(126)</span>
+                </div>
+                <div class="card-footer">
+                  <p class="price">450 ₴ <span class="price-unit">/ год</span></p>
+                  <a href="space.html" class="btn btn-outline">Переглянути</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-photo" src="images/openPlants.jpg" alt="Open space «Липки»: робочі місця у місті Київ">
+              <div class="card-body">
+                <div class="row row-between">
+                  <span class="badge badge-gray">Робоче місце</span>
+                  <span class="badge badge-green">Доступно зараз</span>
+                </div>
+                <h3 class="card-title">Open space «Липки»</h3>
+                <p class="text-small text-muted">Київ, вул. Інститутська, 8</p>
+                <div class="card-rating">
+                  <span class="stars" role="img" aria-label="Рейтинг 4.6 з 5, 312 відгуків"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span></span>
+                  <strong>4.6</strong>
+                  <span class="text-muted">(312)</span>
+                </div>
+                <div class="card-footer">
+                  <p class="price">120 ₴ <span class="price-unit">/ год</span></p>
+                  <a href="space.html" class="btn btn-outline">Переглянути</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-photo" src="images/loftBar.jpg" alt="Cowork «Стара Фабрика»: робочі місця у місті Львів">
+              <div class="card-body">
+                <div class="row row-between">
+                  <span class="badge badge-gray">Робоче місце</span>
+                  <span class="badge badge-amber">Зайнято зараз</span>
+                </div>
+                <h3 class="card-title">Cowork «Стара Фабрика»</h3>
+                <p class="text-small text-muted">Львів, вул. Городоцька, 36</p>
+                <div class="card-rating">
+                  <span class="stars" role="img" aria-label="Рейтинг 4.7 з 5, 204 відгуків"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span></span>
+                  <strong>4.7</strong>
+                  <span class="text-muted">(204)</span>
+                </div>
+                <div class="card-footer">
+                  <p class="price">90 ₴ <span class="price-unit">/ год</span></p>
+                  <a href="space.html" class="btn btn-outline">Переглянути</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-photo" src="images/meetGreen.jpg" alt="Переговорна «Ринок»: переговорна у місті Львів">
+              <div class="card-body">
+                <div class="row row-between">
+                  <span class="badge badge-blue">Переговорна</span>
+                  <span class="badge badge-green">Доступно зараз</span>
+                </div>
+                <h3 class="card-title">Переговорна «Ринок»</h3>
+                <p class="text-small text-muted">Львів, пл. Ринок, 14</p>
+                <div class="card-rating">
+                  <span class="stars" role="img" aria-label="Рейтинг 4.5 з 5, 78 відгуків"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span>★</span></span>
+                  <strong>4.5</strong>
+                  <span class="text-muted">(78)</span>
+                </div>
+                <div class="card-footer">
+                  <p class="price">350 ₴ <span class="price-unit">/ год</span></p>
+                  <a href="space.html" class="btn btn-outline">Переглянути</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-photo" src="images/openWindow.jpg" alt="Hub «Дерибасівська»: робочі місця у місті Одеса">
+              <div class="card-body">
+                <div class="row row-between">
+                  <span class="badge badge-gray">Робоче місце</span>
+                  <span class="badge badge-green">Доступно зараз</span>
+                </div>
+                <h3 class="card-title">Hub «Дерибасівська»</h3>
+                <p class="text-small text-muted">Одеса, вул. Дерибасівська, 10</p>
+                <div class="card-rating">
+                  <span class="stars" role="img" aria-label="Рейтинг 4.4 з 5, 95 відгуків"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span>★</span></span>
+                  <strong>4.4</strong>
+                  <span class="text-muted">(95)</span>
+                </div>
+                <div class="card-footer">
+                  <p class="price">110 ₴ <span class="price-unit">/ год</span></p>
+                  <a href="space.html" class="btn btn-outline">Переглянути</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-photo" src="images/meetPink.jpg" alt="Переговорна «Лиман»: переговорна у місті Одеса">
+              <div class="card-body">
+                <div class="row row-between">
+                  <span class="badge badge-blue">Переговорна</span>
+                  <span class="badge badge-amber">Зайнято зараз</span>
+                </div>
+                <h3 class="card-title">Переговорна «Лиман»</h3>
+                <p class="text-small text-muted">Одеса, вул. Пушкінська, 52</p>
+                <div class="card-rating">
+                  <span class="stars" role="img" aria-label="Рейтинг 4.9 з 5, 41 відгуків"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span></span>
+                  <strong>4.9</strong>
+                  <span class="text-muted">(41)</span>
+                </div>
+                <div class="card-footer">
+                  <p class="price">400 ₴ <span class="price-unit">/ год</span></p>
+                  <a href="space.html" class="btn btn-outline">Переглянути</a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 WorkHub</p>
+      <p>Коворкінги для роботи й зустрічей</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

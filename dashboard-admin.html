@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабінет адміністратора - WorkHub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">W</span>
+          WorkHub
+        </a>
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html">Пошук</a>
+          <a href="dashboard.html" class="active">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container page">
+        <h1>Особистий кабінет</h1>
+
+        <div class="mt-16">
+          <div class="tabs">
+            <a href="dashboard.html">Користувач</a>
+            <a href="dashboard-admin.html" class="active">Адміністратор простору</a>
+          </div>
+        </div>
+
+        <section class="mt-24">
+          <h2 class="section-title">Запити на бронювання</h2>
+          <div class="table-wrap mt-16">
+            <table class="table">
+              <caption class="sr-only">Таблиця запитів на бронювання</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Клієнт</th>
+                  <th scope="col">Простір</th>
+                  <th scope="col">Час</th>
+                  <th scope="col">Сума</th>
+                  <th scope="col">Дія</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Олена Коваль</th>
+                  <td>Переговорна «Дніпро»</td>
+                  <td>20.10, 10:00–12:00</td>
+                  <td>900 ₴</td>
+                  <td>
+                    <div class="actions">
+                      <button class="btn btn-accent btn-small" type="button">Підтвердити</button>
+                      <button class="btn btn-danger btn-small" type="button">Відхилити</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Максим Бондар</th>
+                  <td>Open space «Липки»</td>
+                  <td>20.10, 09:00–18:00</td>
+                  <td>1080 ₴</td>
+                  <td>
+                    <div class="actions">
+                      <button class="btn btn-accent btn-small" type="button">Підтвердити</button>
+                      <button class="btn btn-danger btn-small" type="button">Відхилити</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">TechStart LLC</th>
+                  <td>Переговорна «Дніпро»</td>
+                  <td>21.10, 14:00–17:00</td>
+                  <td>1350 ₴</td>
+                  <td>
+                    <div class="actions">
+                      <button class="btn btn-accent btn-small" type="button">Підтвердити</button>
+                      <button class="btn btn-danger btn-small" type="button">Відхилити</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="admin-grid mt-32">
+          <section>
+            <h2 class="section-title">Керування цінами</h2>
+            <form class="card card-padding mt-16" action="dashboard-admin.html">
+              <label class="label" for="p-1">Переговорна «Дніпро», ₴ / год</label>
+              <input class="input" id="p-1" name="price1" type="number" min="0" value="450">
+
+              <label class="label mt-16" for="p-2">Open space «Липки», ₴ / год</label>
+              <input class="input" id="p-2" name="price2" type="number" min="0" value="120">
+
+              <button class="btn btn-primary btn-full mt-16" type="submit">Зберегти ціни</button>
+            </form>
+          </section>
+
+          <section>
+            <h2 class="section-title">Завантаженість за тиждень</h2>
+            <div class="card card-padding mt-16">
+              <svg viewBox="0 0 420 220" role="img" aria-label="Стовпчикова діаграма завантаженості: Пн 62%, Вт 78%, Ср 85%, Чт 71%, Пт 54%, Сб 28%, Нд 16%">
+                <line x1="36" x2="416" y1="180" y2="180" stroke="#e2e8f0"/>
+                <text x="30" y="184" text-anchor="end" font-size="11" fill="#475569">0%</text>
+                <line x1="36" x2="416" y1="140" y2="140" stroke="#e2e8f0"/>
+                <text x="30" y="144" text-anchor="end" font-size="11" fill="#475569">25%</text>
+                <line x1="36" x2="416" y1="100" y2="100" stroke="#e2e8f0"/>
+                <text x="30" y="104" text-anchor="end" font-size="11" fill="#475569">50%</text>
+                <line x1="36" x2="416" y1="60" y2="60" stroke="#e2e8f0"/>
+                <text x="30" y="64" text-anchor="end" font-size="11" fill="#475569">75%</text>
+                <line x1="36" x2="416" y1="20" y2="20" stroke="#e2e8f0"/>
+                <text x="30" y="24" text-anchor="end" font-size="11" fill="#475569">100%</text>
+                <rect x="48" y="80.8" width="34" height="99.2" rx="4" fill="#1d4ed8"/>
+                <text x="65" y="74.8" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">62</text>
+                <text x="65" y="200" text-anchor="middle" font-size="12" fill="#475569">Пн</text>
+                <rect x="100" y="55.2" width="34" height="124.8" rx="4" fill="#1d4ed8"/>
+                <text x="117" y="49.2" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">78</text>
+                <text x="117" y="200" text-anchor="middle" font-size="12" fill="#475569">Вт</text>
+                <rect x="152" y="44" width="34" height="136" rx="4" fill="#1d4ed8"/>
+                <text x="169" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">85</text>
+                <text x="169" y="200" text-anchor="middle" font-size="12" fill="#475569">Ср</text>
+                <rect x="204" y="66.4" width="34" height="113.6" rx="4" fill="#1d4ed8"/>
+                <text x="221" y="60.4" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">71</text>
+                <text x="221" y="200" text-anchor="middle" font-size="12" fill="#475569">Чт</text>
+                <rect x="256" y="93.6" width="34" height="86.4" rx="4" fill="#1d4ed8"/>
+                <text x="273" y="87.6" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">54</text>
+                <text x="273" y="200" text-anchor="middle" font-size="12" fill="#475569">Пт</text>
+                <rect x="308" y="135.2" width="34" height="44.8" rx="4" fill="#1d4ed8"/>
+                <text x="325" y="129.2" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">28</text>
+                <text x="325" y="200" text-anchor="middle" font-size="12" fill="#475569">Сб</text>
+                <rect x="360" y="154.4" width="34" height="25.6" rx="4" fill="#1d4ed8"/>
+                <text x="377" y="148.4" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">16</text>
+                <text x="377" y="200" text-anchor="middle" font-size="12" fill="#475569">Нд</text>
+              </svg>
+              <p class="chart-note">Середня завантаженість: <strong>56%</strong>. Пік — середа.</p>
+
+              <details>
+                <summary>Показати таблицею</summary>
+                <table class="chart-table">
+                  <caption class="sr-only">Завантаженість по днях тижня</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">День</th>
+                      <th scope="col">Завантаженість</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Пн</th><td>62%</td></tr>
+                    <tr><th scope="row">Вт</th><td>78%</td></tr>
+                    <tr><th scope="row">Ср</th><td>85%</td></tr>
+                    <tr><th scope="row">Чт</th><td>71%</td></tr>
+                    <tr><th scope="row">Пт</th><td>54%</td></tr>
+                    <tr><th scope="row">Сб</th><td>28%</td></tr>
+                    <tr><th scope="row">Нд</th><td>16%</td></tr>
+                  </tbody>
+                </table>
+              </details>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 WorkHub</p>
+      <p>Коворкінги для роботи й зустрічей</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

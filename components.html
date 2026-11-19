@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн-система - WorkHub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">W</span>
+          WorkHub
+        </a>
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html">Пошук</a>
+          <a href="dashboard.html">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container page">
+        <h1>Дизайн-система WorkHub</h1>
+        <p class="text-muted mt-8">Кольори, типографіка та компоненти, що використовуються на всіх сторінках сайту.</p>
+
+        <section class="ds-section">
+          <h2>Кольорова палітра</h2>
+          <div class="swatches">
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #1d4ed8;"></div>
+              <p class="swatch-name"><strong>Primary</strong><br>#1d4ed8</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #1e40af;"></div>
+              <p class="swatch-name"><strong>Primary dark</strong><br>#1e40af</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #e0e9ff;"></div>
+              <p class="swatch-name"><strong>Primary soft</strong><br>#e0e9ff</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #15803d;"></div>
+              <p class="swatch-name"><strong>Accent</strong><br>#15803d</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #166534;"></div>
+              <p class="swatch-name"><strong>Accent dark</strong><br>#166534</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #dcfce7;"></div>
+              <p class="swatch-name"><strong>Accent soft</strong><br>#dcfce7</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #0f172a;"></div>
+              <p class="swatch-name"><strong>Ink</strong><br>#0f172a</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #475569;"></div>
+              <p class="swatch-name"><strong>Muted</strong><br>#475569</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #cbd5e1;"></div>
+              <p class="swatch-name"><strong>Line</strong><br>#cbd5e1</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #f1f5f9;"></div>
+              <p class="swatch-name"><strong>Canvas</strong><br>#f1f5f9</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #b91c1c;"></div>
+              <p class="swatch-name"><strong>Danger</strong><br>#b91c1c</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #fee2e2;"></div>
+              <p class="swatch-name"><strong>Danger soft</strong><br>#fee2e2</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #92400e;"></div>
+              <p class="swatch-name"><strong>Warn</strong><br>#92400e</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #fef3c7;"></div>
+              <p class="swatch-name"><strong>Warn soft</strong><br>#fef3c7</p>
+            </div>
+            <div class="card swatch">
+              <div class="swatch-color" style="background: #b45309;"></div>
+              <p class="swatch-name"><strong>Star</strong><br>#b45309</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Типографіка (Inter)</h2>
+          <div class="card card-padding">
+            <p class="hero-title">Заголовок Hero: 48 / 700</p>
+            <h1 class="mt-16">Заголовок H1: 30 / 700</h1>
+            <h2 class="mt-16">Заголовок H2: 24 / 700</h2>
+            <h3 class="mt-16">Заголовок H3: 20 / 600</h3>
+            <p class="mt-16">Основний текст: 16 / 400</p>
+            <p class="text-small text-muted mt-8">Допоміжний текст: 14 / 400</p>
+            <p class="text-xs text-muted mt-8">Підпис: 12 / 400</p>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Кнопки</h2>
+          <div class="card card-padding row row-wrap">
+            <button class="btn btn-primary" type="button">Primary</button>
+            <button class="btn btn-secondary" type="button">Secondary</button>
+            <button class="btn btn-outline" type="button">Outline</button>
+            <button class="btn btn-accent" type="button">Accent</button>
+            <button class="btn btn-danger" type="button">Danger</button>
+            <button class="btn btn-primary" type="button" disabled>Disabled</button>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Бейджі та рейтинг</h2>
+          <div class="card card-padding row row-wrap">
+            <span class="badge badge-blue">Переговорна</span>
+            <span class="badge badge-gray">Робоче місце</span>
+            <span class="badge badge-green">Доступно зараз</span>
+            <span class="badge badge-amber">Зайнято зараз</span>
+            <span class="badge badge-red">✕ Відхилено</span>
+            <span class="badge badge-green">✓ Підтверджено</span>
+            <span class="stars" role="img" aria-label="Оцінка 4 з 5"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span>★</span></span>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Поля форм</h2>
+          <div class="card card-padding ds-grid ds-grid-3">
+            <div>
+              <label class="label" for="ds-1">Звичайне поле</label>
+              <input class="input" id="ds-1" type="text" placeholder="Введіть текст">
+            </div>
+            <div>
+              <label class="label" for="ds-2">Поле з підказкою</label>
+              <input class="input" id="ds-2" type="text" value="12/28">
+              <p class="field-hint">Формат ММ/РР</p>
+            </div>
+            <div>
+              <label class="label" for="ds-3">Поле з помилкою</label>
+              <input class="input input-error" id="ds-3" type="text" value="1234">
+              <p class="field-error">⚠ Введіть 16 цифр номера картки</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Перемикачі</h2>
+          <div class="card card-padding row row-wrap">
+            <label class="switch">
+              <input type="checkbox" class="sr-only" checked>
+              <span class="switch-track"></span>
+              Увімкнено
+            </label>
+            <label class="switch">
+              <input type="checkbox" class="sr-only">
+              <span class="switch-track"></span>
+              Вимкнено
+            </label>
+            <div class="segmented">
+              <label><input type="radio" name="ds-seg" class="sr-only" checked><span>Усі</span></label>
+              <label><input type="radio" name="ds-seg" class="sr-only"><span>Робоче місце</span></label>
+              <label><input type="radio" name="ds-seg" class="sr-only"><span>Переговорна</span></label>
+            </div>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Слоти часу</h2>
+          <div class="card card-padding detail-main">
+            <div class="slots">
+              <button class="slot" type="button">09:00</button>
+              <button class="slot selected" type="button">13:00</button>
+              <button class="slot" type="button" disabled>10:00</button>
+              <button class="slot conflict" type="button">14:00</button>
+            </div>
+            <p class="field-hint">Вільний, обраний, зайнятий, конфлікт</p>
+          </div>
+        </section>
+
+        <section class="ds-section">
+          <h2>Повідомлення та порожній стан</h2>
+          <div class="ds-grid ds-grid-2">
+            <div>
+              <div class="alert-error">
+                <p><strong>⚠ Слот 11:00 недоступний на 2 год.</strong></p>
+                <p class="mt-8">Найближчий вільний: 13:00.</p>
+                <button class="btn btn-outline btn-small btn-full mt-8" type="button">Обрати 13:00</button>
+              </div>
+              <div class="alert-success mt-16">
+                <p class="alert-title">✓ Оплату успішно виконано</p>
+                <p class="text-small">Квитанцію надіслано на ваш email.</p>
+              </div>
+            </div>
+            <div class="card empty">
+              <p><strong>Нічого не знайдено</strong></p>
+              <p class="text-small text-muted mt-8">Спробуйте змінити місто, тип простору або вимкнути «Доступно зараз».</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 WorkHub</p>
+      <p>Коворкінги для роботи й зустрічей</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
